@@ -1,6 +1,5 @@
 #!/usr/bin/env groovy
 
-
 @Library(['github.com/indigo-dc/jenkins-pipeline-library@release/2.1.0']) _
 
 pipeline {
