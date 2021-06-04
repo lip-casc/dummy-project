@@ -8,10 +8,17 @@ podTemplate(label: label,
         ],
         ) {
     node(label) {
-        stage('Run shell') {
-            container('alpine') {
-                sh 'echo "hello world"'
+            stages {
+                stage('Run shell') {
+                    container('alpine') {
+                        sh 'echo "hello world"'
+                    }
+                }
             }
-        }
+            post { 
+                always { 
+                    echo 'I will always say Hello again!'
+                }
+            }
     }
 }
