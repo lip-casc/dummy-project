@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def label = "k8sagent-e2e"
+def label = "tiagolabel"
 
 podTemplate(label: label,
         containers: [
