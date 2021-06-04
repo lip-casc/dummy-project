@@ -2,7 +2,7 @@
 
 
 pipeline {
-  agent { label 'tiagolabel' }
+  agent any
   stages {
     stage('HelloWorld1') {
       steps {
