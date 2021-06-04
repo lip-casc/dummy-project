@@ -8,7 +8,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                sh 'println "It's working !!!"'
+                println "It's working !!!"
             }
         }
     }
