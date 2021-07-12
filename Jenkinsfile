@@ -4,6 +4,8 @@
 
 def projectConfig
 
+properties([pipelineTriggers([githubPush()])])
+
 pipeline {
   agent any
   stages {
